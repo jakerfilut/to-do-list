@@ -10,6 +10,8 @@ function Todo({ todo, index, markTodo, removeTodo }) {
         {todo.text}
       </span>
       <div>
+        {" "}
+        Phu6u
         <Button variant="outline-success" onClick={() => markTodo(index)}>
           ✓
         </Button>{" "}
@@ -23,6 +25,7 @@ function Todo({ todo, index, markTodo, removeTodo }) {
 
 function FormTodo({ addTodo }) {
   const [value, setValue] = useState("");
+  //useState
 
   const handleSubmit = (e) => {
     e.preventDefault();
